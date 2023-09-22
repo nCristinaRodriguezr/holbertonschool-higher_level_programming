@@ -1,3 +1,4 @@
+import sys
 # Examples of doctests based on the function docstrings
 >>> add_integer(1, 2)
 3
