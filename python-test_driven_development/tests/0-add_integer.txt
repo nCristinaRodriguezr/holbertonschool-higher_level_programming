@@ -1,4 +1,7 @@
 import sys
+sys.path.append('../0.add_integer')
+
+from 0.add_integer import add_integer
 # Examples of doctests based on the function docstrings
 >>> add_integer(1, 2)
 3
