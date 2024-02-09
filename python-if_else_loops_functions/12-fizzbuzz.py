@@ -11,9 +11,3 @@ def fizzbuzz():
             print(f'{n} ', end='')
         if n == 100:
             print('$')
-
-                   
-
-            
-
-        
