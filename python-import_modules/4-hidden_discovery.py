@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.8
+#!/usr/bin/python3
 import hidden_4
 if __name__ == "__main__":
     for i, name in enumerate(dir(hidden_4)):
