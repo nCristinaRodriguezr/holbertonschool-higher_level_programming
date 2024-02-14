@@ -4,8 +4,8 @@ def print_matrix_integer(matrix=[[]]):
         for fila in matrix:
             for i in range(len(fila)):
                 if i == len(fila)-1:
-                    print('{}'.format(fila[i]))
+                    print('{:d}'.format(fila[i]))
                 else:
-                    print('{} '.format(fila[i]), end='')
+                    print('{:d} '.format(fila[i]), end='')
     else:
         print('')
