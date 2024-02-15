@@ -3,4 +3,3 @@ class Square:
     """
     The objetive of this class is nothing
     """
-
