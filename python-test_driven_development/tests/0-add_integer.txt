@@ -38,3 +38,9 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+
+>>> add_integer(4567, 67.67)
+4634
+
+>>> add_integer(4456.0987, 67.67)
+4523
