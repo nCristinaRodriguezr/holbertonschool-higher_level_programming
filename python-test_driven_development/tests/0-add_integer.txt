@@ -60,3 +60,17 @@ NameError: name 'min_float' is not defined
 Traceback (most recent call last):
 ...
 NameError: name 'min_float' is not defined
+
+>>> add_integer(10 ,11, 4)                               
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+>>> add_integer(10 ,2^2)   
+10
+
+>>> add_integer(0x1A, 0xFF)
+281
+
+>>> add_integer(0x1A, 45)   
+71
