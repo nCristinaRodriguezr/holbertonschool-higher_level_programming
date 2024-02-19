@@ -1,0 +1,71 @@
+>>> matrix_divided(matrix, 3) 
+Traceback (most recent call last):
+...
+NameError: name 'matrix' is not defined
+
+>>> matrix_divided(None, 3)   
+Traceback (most recent call last):
+...
+TypeError: 'NoneType' object is not subscriptable
+
+>>> matrix_divided()        
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+>>> matrix_divided([1],[2],[3], 4) 
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() takes 2 positional arguments but 4 were given
+
+>>> matrix_divided(None, None)     
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+>>> matrix_divided(matrix, 5)  
+[[0.2, 0.4, 0.6], [0.8, 1.0, 1.2]]
+
+>>> matrix_divided(matrix, 0) 
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+>>> matrix_divided(matrix, None) 
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+>>> matrix_divided(matrix,)      
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+...
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix_divided(matrix, -8)
+[[-0.12, -0.25, -0.38, -0.5], [-1.12, -1.0, -0.75, -1.0]]
+
+>>> matrix_divided(matrix, 7.345)   
+[[0.14, 0.27, 0.41, 0.54], [1.23, 1.09, 0.82, 1.09]]
+
+>>> matrix_divided(matrix, max_float)
+[[0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0]]
+
+>>> matrix_divided(matrix, min_float) 
+[[4.49423283715579e+307, 8.98846567431158e+307, 1.348269851146737e+308, inf], [inf, inf, inf, inf]]
+
+>>> matrix_divided(matrix, 8)         
+[[0.12, 0.25, 0.43, 0.5], [1.12, 1.0, 0.75, 1.08]]
+
+>>> matrix_divided(matrix, 2) 
+[[0.5, 1.0, 1.73, 2.0], [4.5, 4.0, 3.0, 0.0]]
+
+>>> matrix =[[1, 2, 3.45, 4], [9, 8, 6, None]]
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/float
