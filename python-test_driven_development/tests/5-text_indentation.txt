@@ -61,3 +61,29 @@ MAYBE 1000!>>>
 Traceback (most recent call last):
 ...
 TypeError: text must be a string
+
+>>> text_indentation(....!!!??::,,,) 
+  File "<stdin>", line 1
+    text_indentation(....!!!??::,,,)
+                         ^
+SyntaxError: invalid syntax
+
+>>> text_indentation("....!!!??::,,,")
+.
+
+.
+
+.
+
+.
+
+!!!?
+
+?
+
+:
+
+:
+
+,,,>>>
+
