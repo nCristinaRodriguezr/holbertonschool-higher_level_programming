@@ -6,9 +6,11 @@ A class Rectangle that defines a rectangle by: (based on 3-rectangle.py)
 
 class Rectangle:
     """
-    This class aims to create a triangular object and define its width and height,
-    as well as multiply the base with the height to get the area of 
-    the rectangle and represent the rectangle with #
+    This class aims to create a triangular
+    object and define its width and height,
+    as well as multiply the base with the
+    height to get the area of the rectangle
+    and represent the rectangle with #
     Args : width, height
     """
     def __init__(self, width=0, height=0):
