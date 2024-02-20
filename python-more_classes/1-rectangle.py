@@ -9,8 +9,10 @@ class Rectangle:
     This class aims to create a triangle object and define its width and height
     """
     def __init__(self, width=0, height=0):
-        self.__height = height
-        self.__width = width
+        self.__height = 0
+        self.__width = 0
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
