@@ -17,10 +17,8 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        self.__height = 0
-        self.__width = 0
-        self.height = height
         self.width = width
+        self.height = height
         Rectangle.number_of_instances = Rectangle.number_of_instances + 1
 
     @property
@@ -52,7 +50,7 @@ class Rectangle:
 
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
-            return None
+            return 0
         return (self.__height * 2) + (self.__width * 2)
 
     def __str__(self):
