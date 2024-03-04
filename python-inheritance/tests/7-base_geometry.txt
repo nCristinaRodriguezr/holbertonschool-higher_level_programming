@@ -1,0 +1,30 @@
+>>> square1.integer_validator('nataly','cristina') 
+Traceback (most recent call last):
+...
+TypeError: nataly must be an integer
+
+>>> square1.integer_validator('nataly',0)          
+Traceback (most recent call last):
+...
+ValueError: nataly must be greater than 0
+
+>>> square1.integer_validator('nataly',-7)
+Traceback (most recent call last):
+...
+ValueError: nataly must be greater than 0
+
+>>> square1.integer_validator('nataly',None) 
+Traceback (most recent call last):
+...
+TypeError: nataly must be an integer
+
+>>> square1.integer_validator('nataly')      
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> square1.integer_validator()         
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
