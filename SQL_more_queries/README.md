@@ -1,0 +1,1 @@
+I'm learning about more SQL nad Querys
