@@ -20,7 +20,7 @@ if __name__ == '__main__':
         db=db_name
         )
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE UPPER(name) LIKE 'N%' ORDER BY id")
+    cur.execute("SELECT * FROM states WHERE name REGEXP '^N' ORDER BY id")
     rows = cur.fetchall()
     for row in rows:
         print(row)
