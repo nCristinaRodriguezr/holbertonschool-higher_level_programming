@@ -21,8 +21,9 @@ if __name__ == '__main__':
         db=db_name
         )
     cur = db.cursor()
-    query = "SELECT * FROM states WHERE name = %s ORDER BY id"
-    cur.execute(query, (state_name_searched,))
+    query = "SELECT * FROM states WHERE name = '{}'"\
+        "ORDER BY id".format(state_name_searched)
+    cur.execute(query)
     rows = cur.fetchall()
     for row in rows:
         print(row)
