@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""Script that lists all State objects from the database hbtn_0e_6_usa"""
-
+"""
+Script that lists all State objects from the database hbtn_0e_6_usa
+"""
 
 import sys
 from sqlalchemy import create_engine
@@ -23,5 +24,5 @@ Session = sessionmaker(bind=engine)
 session = Session()
 states = session.query(State).order_by(State.id).all()
 for state in states:
-        print("{}: {}".format(state.id, state.name))
+    print("{}: {}".format(state.id, state.name))
 session.close()
