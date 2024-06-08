@@ -1,0 +1,15 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "semistandard",
+    "lint-fix": "semistandard --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "semistandard": "^17.0.0"
+  }
+}
